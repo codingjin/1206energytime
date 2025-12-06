@@ -73,8 +73,14 @@ This script:
 **2. Compile**
 
 ```bash
-nvcc -o batch_matmul_experiment batch_matmul_experiment.cu -lnvml
+# With library path (recommended)
+nvcc -O3 -L/usr/local/cuda/targets/x86_64-linux/lib/stubs -o batch_matmul_experiment batch_matmul_experiment.cu -lnvidia-ml
+
+# Or let the system find the library (may require LD_LIBRARY_PATH)
+nvcc -O3 -o batch_matmul_experiment batch_matmul_experiment.cu -lnvidia-ml
 ```
+
+**Note:** The library is named `libnvidia-ml.so` (not `libnvml.so`), located in CUDA's stubs directory.
 
 **3. Run**
 
