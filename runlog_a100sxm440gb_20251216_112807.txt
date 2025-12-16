@@ -1,0 +1,123 @@
+========================================
+GPU Energy Measurement Stability Experiment
+========================================
+
+GPU Device: NVIDIA A100-SXM4-40GB
+Hardware energy counter: Supported
+
+Configuration:
+  Batch size: 16
+  Matrix size: 4096x4096
+  Memory per batch: 1024.00 MB
+
+Performing warm-up runs...
+Warm-up complete.
+
+Running experiments with 10 trials each...
+
+=== Experiment: 1 iterations per trial, 10 trials ===
+  Trial  1: Total=110.177 J, Per-iter=110.177000 J, Time=412.97 ms
+  Trial  2: Total=98.314 J, Per-iter=98.314000 J, Time=412.96 ms
+  Trial  3: Total=95.350 J, Per-iter=95.350000 J, Time=412.96 ms
+  Trial  4: Total=92.239 J, Per-iter=92.239000 J, Time=412.93 ms
+  Trial  5: Total=117.511 J, Per-iter=117.511000 J, Time=412.94 ms
+  Trial  6: Total=106.990 J, Per-iter=106.990000 J, Time=412.93 ms
+  Trial  7: Total=103.918 J, Per-iter=103.918000 J, Time=412.94 ms
+  Trial  8: Total=100.971 J, Per-iter=100.971000 J, Time=412.93 ms
+  Trial  9: Total=98.274 J, Per-iter=98.274000 J, Time=412.92 ms
+  Trial 10: Total=95.380 J, Per-iter=95.380000 J, Time=412.93 ms
+
+--- Statistics ---
+Energy per iteration: 101.912400 ± 7.401413 J (CV: 7.26%)
+Total energy:         101.912 ± 7.401 J
+Execution time:       412.94 ± 0.02 ms
+Total duration:       412.94 ms (0.41 s)
+Range:                [92.239000, 117.511000] J (24.80% variation)
+
+Cooling down for 2 seconds...
+
+=== Experiment: 2 iterations per trial, 10 trials ===
+  Trial  1: Total=208.142 J, Per-iter=104.071000 J, Time=886.55 ms
+  Trial  2: Total=210.323 J, Per-iter=105.161500 J, Time=825.86 ms
+  Trial  3: Total=206.076 J, Per-iter=103.038000 J, Time=825.84 ms
+  Trial  4: Total=229.421 J, Per-iter=114.710500 J, Time=825.85 ms
+  Trial  5: Total=216.971 J, Per-iter=108.485500 J, Time=825.85 ms
+  Trial  6: Total=212.164 J, Per-iter=106.082000 J, Time=825.88 ms
+  Trial  7: Total=207.445 J, Per-iter=103.722500 J, Time=825.88 ms
+  Trial  8: Total=230.959 J, Per-iter=115.479500 J, Time=825.88 ms
+  Trial  9: Total=220.113 J, Per-iter=110.056500 J, Time=825.88 ms
+  Trial 10: Total=214.054 J, Per-iter=107.027000 J, Time=825.86 ms
+
+--- Statistics ---
+Energy per iteration: 107.783400 ± 4.195325 J (CV: 3.89%)
+Total energy:         215.567 ± 8.391 J
+Execution time:       831.93 ± 18.21 ms
+Total duration:       831.93 ms (0.83 s)
+Range:                [103.038000, 115.479500] J (11.54% variation)
+
+Cooling down for 2 seconds...
+
+=== Experiment: 4 iterations per trial, 10 trials ===
+  Trial  1: Total=443.199 J, Per-iter=110.799750 J, Time=1696.11 ms
+  Trial  2: Total=439.612 J, Per-iter=109.903000 J, Time=1651.64 ms
+  Trial  3: Total=459.298 J, Per-iter=114.824500 J, Time=1651.68 ms
+  Trial  4: Total=446.334 J, Per-iter=111.583500 J, Time=1651.95 ms
+  Trial  5: Total=441.057 J, Per-iter=110.264250 J, Time=1651.73 ms
+  Trial  6: Total=453.172 J, Per-iter=113.293000 J, Time=1651.77 ms
+  Trial  7: Total=444.428 J, Per-iter=111.107000 J, Time=1651.74 ms
+  Trial  8: Total=464.418 J, Per-iter=116.104500 J, Time=1651.77 ms
+  Trial  9: Total=447.962 J, Per-iter=111.990500 J, Time=1651.71 ms
+  Trial 10: Total=467.930 J, Per-iter=116.982500 J, Time=1651.73 ms
+
+--- Statistics ---
+Energy per iteration: 112.685250 ± 2.375880 J (CV: 2.11%)
+Total energy:         450.741 ± 9.504 J
+Execution time:       1656.18 ± 13.31 ms
+Total duration:       1656.18 ms (1.66 s)
+Range:                [109.903000, 116.982500] J (6.28% variation)
+
+Cooling down for 2 seconds...
+
+=== Experiment: 8 iterations per trial, 10 trials ===
+  Trial  1: Total=923.077 J, Per-iter=115.384625 J, Time=3333.95 ms
+  Trial  2: Total=910.380 J, Per-iter=113.797500 J, Time=3303.30 ms
+  Trial  3: Total=923.737 J, Per-iter=115.467125 J, Time=3303.23 ms
+  Trial  4: Total=928.332 J, Per-iter=116.041500 J, Time=3303.13 ms
+  Trial  5: Total=933.034 J, Per-iter=116.629250 J, Time=3303.16 ms
+  Trial  6: Total=937.877 J, Per-iter=117.234625 J, Time=3303.14 ms
+  Trial  7: Total=942.470 J, Per-iter=117.808750 J, Time=3303.05 ms
+  Trial  8: Total=918.375 J, Per-iter=114.796875 J, Time=3302.97 ms
+  Trial  9: Total=930.609 J, Per-iter=116.326125 J, Time=3302.95 ms
+  Trial 10: Total=935.131 J, Per-iter=116.891375 J, Time=3302.93 ms
+
+--- Statistics ---
+Energy per iteration: 116.037775 ± 1.141987 J (CV: 0.98%)
+Total energy:         928.302 ± 9.136 J
+Execution time:       3306.18 ± 9.26 ms
+Total duration:       3306.18 ms (3.31 s)
+Range:                [113.797500, 117.808750] J (3.46% variation)
+
+Cooling down for 2 seconds...
+
+=== Experiment: 16 iterations per trial, 10 trials ===
+  Trial  1: Total=1863.014 J, Per-iter=116.438375 J, Time=6649.78 ms
+  Trial  2: Total=1868.653 J, Per-iter=116.790813 J, Time=6605.63 ms
+  Trial  3: Total=1889.458 J, Per-iter=118.091125 J, Time=6605.58 ms
+  Trial  4: Total=1899.476 J, Per-iter=118.717250 J, Time=6605.42 ms
+  Trial  5: Total=1882.968 J, Per-iter=117.685500 J, Time=6605.21 ms
+  Trial  6: Total=1900.590 J, Per-iter=118.786875 J, Time=6605.15 ms
+  Trial  7: Total=1882.188 J, Per-iter=117.636750 J, Time=6605.03 ms
+  Trial  8: Total=1900.672 J, Per-iter=118.792000 J, Time=6605.06 ms
+  Trial  9: Total=1910.458 J, Per-iter=119.403625 J, Time=6605.00 ms
+  Trial 10: Total=1891.999 J, Per-iter=118.249938 J, Time=6604.87 ms
+
+--- Statistics ---
+Energy per iteration: 118.059225 ± 0.888730 J (CV: 0.75%)
+Total energy:         1888.948 ± 14.220 J
+Execution time:       6609.67 ± 13.37 ms
+Total duration:       6609.67 ms (6.61 s)
+Range:                [116.438375, 119.403625] J (2.51% variation)
+
+========================================
+Experiment complete!
+========================================
